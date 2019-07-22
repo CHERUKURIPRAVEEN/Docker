@@ -19,25 +19,31 @@ docker pull ubuntu:16.04
 ```
 
 4. create a custom tag to docker image
+
 ```sh
 docker tag ubuntu:latest praveen/ubuntu:demo
 ```
 
-5. login to your docker hub registry 
-``sh
+5. login to your docker hub registry
+
+```sh
 docker login
 ```
-6. docker push praveen/ubuntu:demo
+6. Push to the docker hub
 
-
+``sh
+docker push praveen/ubuntu:demo
+```
 ### testing 
 
 1. Remove all images in docker server 
+
 ```sh 
 docker image rm -f <Image_id>
 ```
 
 2. Pull your custom image from your docker account
+
 ```sh
 docker pull praveen/ubuntu:demo
 ```
