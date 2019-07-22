@@ -31,7 +31,7 @@ docker login
 ```
 6. Push to the docker hub
 
-``sh
+```sh
 docker push praveen/ubuntu:demo
 ```
 ### testing 
