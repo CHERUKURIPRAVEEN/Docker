@@ -69,6 +69,9 @@ docker run -itd --name=Jenkins_server --hostname=Jenkins_Master -p <hostport>:<c
 
 ```sh
 docker rm <container_id>
+
+for removing all containers
+docker rm $(docker ps -aq)
 ```
 
 1. login to a docker container
