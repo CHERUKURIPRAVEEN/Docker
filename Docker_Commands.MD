@@ -23,7 +23,10 @@ docker rmi <image id>
 Delete docker all images in single command
 ```
 docker rmi ${docker images -q}
+
+docker image purne
 ```
+
 ## Docker Dangling Images
 List the Dangling Images
 ```
