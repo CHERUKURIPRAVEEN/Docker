@@ -1,6 +1,6 @@
 
-## Images
-̱How to search a docker image in hub.docker.com
+## Docker Images
+How to search a docker image in hub.docker.com
 ```
 docker search jenkins
 ```
@@ -23,6 +23,15 @@ docker rmi <image id>
 Delete docker all images in single command
 ```
 docker rmi ${docker images -q}
+```
+## Docker Dangling Images
+List the Dangling Images
+```
+docker images -f dangling=true
+```
+Remove the Dangling Images
+```
+docker rmi -f ${docker images -f dangling=true -q}
 ```
 ## Docker Contaniers
 Create/run/start a docker container from image
