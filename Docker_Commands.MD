@@ -22,7 +22,7 @@ docker rmi <image id>
 ```
 Delete docker all images in single command
 ```
-docker rmi ${docker images -q}
+docker rmi -f $(docker images -aq)
 
 docker image purne
 ```
@@ -34,7 +34,7 @@ docker images -f dangling=true
 ```
 Remove the Dangling Images
 ```
-docker rmi -f ${docker images -f dangling=true -q}
+docker rmi -f $(docker images -f dangling=true -q)
 ```
 ## Docker Contaniers
 Create/run/start a docker container from image
