@@ -24,7 +24,7 @@ Delete docker all images in single command
 ```
 docker rmi -f $(docker images -aq)
 
-docker image purne
+docker image purne -a
 ```
 
 ## Docker Dangling Images
